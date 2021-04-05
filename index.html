@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="//db.onlinewebfonts.com/c/e741f82b9ff535750ed4d0b17e552b15?family=WindsorW01-Bold" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>I miss my kathmandu</title>
+</head>
+
+<body>
+    <main>
+        <div class="title">
+            <h4>I Miss My <br/>Home</h4>
+        </div>
+        <div class="background">
+            <img src="../../assets/2.png" alt="chair">
+        </div>
+        <div class="player">
+            <div class="sounds">
+                <ul class="sound-item">
+                    <!--For each sound, we need a title, a play/pause button
+                    a volume icon and volume control bar
+                    -->
+                    <div class="description">
+                        <p>Handpump at Grandparent's Place</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-handpump')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume"></i>
+                        <input type="range" id="volume-control" onchange="controlVolume('#audio-handpump', event)" min="0" max="100" value="50">
+                    </div>
+                    <audio loop id="audio-handpump">
+                        <source src="./assets/library/handpump.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+
+                <ul class="sound-item">
+                    <div class="description">
+                        <p>Evening stroll at Pashupatinath</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-shivratri')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-handpump', event)">
+                    </div>
+                    <audio loop id="audio-shivratri">
+                        <source src="./assets/library/shivratri.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p> It's raining on your way to school</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-rain')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-handpump', event)">
+                    </div>
+                    <audio loop id="audio-rain">
+                        <source src="./assets/library/rain.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p> Ring Road Traffic Ambience</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-traffic')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-handpump', event)">
+                    </div>
+                    <audio loop id="audio-traffic">
+                        <source src="./assets/library/traffic.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p> Buying vegetables at Haat Bazar </p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-mandi')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-handpump', event)">
+                    </div>
+                    <audio loop id="audio-mandi">
+                        <source src="./assets/library/mandi.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p>Mom is making morning tea</p>
+                        <i class="fa fa-play" onclick="play(this,'#audio-tea')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-handpump', event)">
+                    </div>
+                    <audio loop id="audio-tea">
+                        <source src="./assets/library/tea.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <p>Made with <i class="fa fa-heart"></i> by Sanskriti. Inspired by
+            <a href="https://imissmybar.com" target="_blank">imissmybar.com</a> and
+            <a href="https://www.imissmycafe.com/" target="_blank">imissmycafe.com</a>
+        </p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
