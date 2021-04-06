@@ -345,4 +345,7 @@ Make it Mobile Friendly
     .footer {
         padding-top: 20px;
     }
+    .footer p {
+        font-size: 12px;
+    }
 }
