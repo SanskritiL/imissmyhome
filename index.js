@@ -1,10 +1,19 @@
-/**
- * This function toggles play/pause button and plays/stop audio 
- * @param {Object} icon - i object 
- * @param {string} audioId - audio id of audio that needs to be played
- */
+window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+
+        const main = document.querySelector(".loading");
+        main.classList.remove("loading");
+
+        const footer = document.querySelector(".footer-loading");
+        footer.classList.remove("footer-loading");
+    })
+    /**
+     * This function toggles play/pause button and plays/stop audio 
+     * @param {Object} icon - i object 
+     * @param {string} audioId - audio id of audio that needs to be played
+     */
 function play(icon, audioId) {
-    console.log("here")
     const audio = document.querySelector(audioId);
     if (icon.classList.contains('fa-play')) {
         icon.classList.remove('fa-play');
@@ -24,4 +33,18 @@ function play(icon, audioId) {
  */
 function controlVolume(id, event) {
     document.querySelector(id).volume = event.currentTarget.value / 100;
+}
+
+function mute(icon, audioId) {
+    const audio = document.querySelector(audioId);
+    if (icon.classList.contains('fa-volume')) {
+        icon.classList.remove('fa-volume');
+        icon.classList.add('fa-volume-mute');
+        audio.pause();
+    } else {
+        icon.classList.remove('fa-volume-mute');
+        icon.classList.add('fa-volume');
+        audio.play();
+    }
+
 }
