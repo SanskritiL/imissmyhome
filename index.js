@@ -40,11 +40,11 @@ function mute(icon, audioId) {
     if (icon.classList.contains('fa-volume')) {
         icon.classList.remove('fa-volume');
         icon.classList.add('fa-volume-mute');
-        audio.pause();
+        audio.muted = true;
     } else {
         icon.classList.remove('fa-volume-mute');
         icon.classList.add('fa-volume');
-        audio.play();
+        audio.muted = false;
     }
 
 }
