@@ -287,6 +287,18 @@ footer
 
 
 /*
+brand
+*/
+
+.brand {
+    text-decoration: none;
+    /* color: rgb(211, 130, 143); */
+    font-weight: 600;
+    color: black;
+}
+
+
+/*
 animation
 */
 
