@@ -144,14 +144,16 @@ First container contains title
 */
 
 .title {
-    flex: 0.6;
+    flex: 0.7;
     margin-top: 13%;
 }
 
 h4 {
     font-family: "Windsor";
     font-weight: 600;
-    font-size: 60px;
+    font-size: 70px;
+    line-height: 80%;
+    ;
 }
 
 
