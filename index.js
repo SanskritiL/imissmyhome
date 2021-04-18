@@ -1,18 +1,33 @@
 window.addEventListener("load", function() {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
 
-        const main = document.querySelector(".loading");
-        main.classList.remove("loading");
+    const main = document.querySelector(".loading");
+    main.classList.remove("loading");
 
-        const footer = document.querySelector(".footer-loading");
-        footer.classList.remove("footer-loading");
-    })
-    /**
-     * This function toggles play/pause button and plays/stop audio 
-     * @param {Object} icon - i object 
-     * @param {string} audioId - audio id of audio that needs to be played
-     */
+    const footer = document.querySelector(".footer-loading");
+    footer.classList.remove("footer-loading");
+})
+
+if (window.innerWidth < 1024) {
+    const height = document.documentElement.scrollHeight
+
+    const element = document.getElementsByClassName("embed")[0];
+    element.style.top = height + 200 + "px";
+    console.log(element.style.top);
+
+    const footer = document.getElementsByClassName("footer")[0];
+    footer.style.top = height + 250 + 400 + "px";
+    footer.style.paddingLeft = "20px"
+
+}
+
+
+/**
+ * This function toggles play/pause button and plays/stop audio 
+ * @param {Object} icon - i object 
+ * @param {string} audioId - audio id of audio that needs to be played
+ */
 function play(icon, audioId) {
     const audio = document.querySelector(audioId);
     if (icon.classList.contains('fa-play')) {
@@ -48,3 +63,4 @@ function mute(icon, audioId) {
     }
 
 }
+document.documentElement.scrollHeight
