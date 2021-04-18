@@ -13,7 +13,7 @@ if (window.innerWidth < 1024) {
     const height = document.documentElement.scrollHeight
 
     const element = document.getElementsByClassName("embed")[0];
-    element.style.top = height + 250 + "px";
+    element.style.top = height + 220 + "px";
     console.log(element.style.top);
 
     const footer = document.getElementsByClassName("footer")[0];
