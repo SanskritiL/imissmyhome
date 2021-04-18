@@ -116,7 +116,7 @@
 }
 
 body {
-    --text-color: rgb(58, 56, 56);
+    --text-color: black;
     --bg-color: #e1daca;
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
@@ -146,6 +146,7 @@ First container contains title
 .title {
     flex: 0.7;
     margin-top: 13%;
+    margin-right: 0;
 }
 
 h4 {
@@ -153,6 +154,17 @@ h4 {
     font-weight: 600;
     font-size: 70px;
     line-height: 80%;
+    color: black;
+}
+
+.youtube {
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.week {
+    line-height: 80%;
+    font-weight: 100;
 }
 
 
@@ -161,9 +173,9 @@ Second container has cover image
 */
 
 .background {
-    flex: 1;
+    flex: 0.9;
     margin-top: 5%;
-    margin-left: 2.5%;
+    margin-left: 1%;
 }
 
 .background img {
@@ -179,7 +191,7 @@ Third container contains sound choice with volume control
     flex: 0.7;
     margin-top: 25vh;
     height: 50vh;
-    padding-left: 5%;
+    padding-left: 1%;
 }
 
 .sound {
@@ -241,7 +253,7 @@ input[type=range] {
 input[type=range]::-webkit-slider-runnable-track {
     width: 50px;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: black;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -280,10 +292,15 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    text-decoration: none;
 }
 
 .footer .fa-heart {
     color: rgb(211, 130, 143);
+}
+
+a {
+    color: black;
 }
 
 
