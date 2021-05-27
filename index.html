@@ -67,7 +67,7 @@
             <img src="./assets/image/cover.png" alt="chair">
         </div>
         <div class="player">
-            <div class="sounds">
+            <div class="sounds nepal">
                 <ul class="sound-item">
                     <!-- For each sound, we need a title, a play/pause button a volume icon and volume control bar -->
 
@@ -149,7 +149,102 @@
                         <source src="./assets/library/tea.mp3" type="audio/mpeg">
                     </audio>
                 </ul>
+                <ul>
+                    <img class= "flag" src = "./assets/image/nepal-svgrepo-com.svg" height="30px" onclick="switchToNepal()"/> 
+                    <img class="flag" src = "./assets/image/india-svgrepo-com.svg" height="30px" onclick="switchToIndia()"/> 
+                </ul>
             </div>
+
+
+            <div class="sounds india hide">
+                <ul class="sound-item">
+                    <div class="description">
+                        <p>Riding Local Train in Mumbai</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-train')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-train')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-train', event)">
+                    </div>
+                    <audio loop id="audio-train">
+                        <source src="./assets/library/train.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+
+                <ul class="sound-item">
+                    <!-- For each sound, we need a title, a play/pause button a volume icon and volume control bar -->
+
+                    <div class="description">
+                        <p>Kids playing cricket in neighbourhood</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-cricket')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-cricket')"></i>
+                        <input type="range" id="volume-control" onchange="controlVolume('#audio-cricket', event)" min="0" max="100" value="50">
+                    </div>
+                    <audio loop id="audio-cricket">
+                        <source src="./assets/library/cricket.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+
+                <ul class="sound-item">
+                    <div class="description">
+                        <p> Roadside street food with friends</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-food')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-food')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-food', event)">
+                    </div>
+                    <audio loop id="audio-food">
+                        <source src="./assets/library/food.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p> 'Kasauti Zindagi Ki' in rainy day</p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-serial')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-serial')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-serial', event)">
+                    </div>
+                    <audio loop id="audio-serial">
+                        <source src="./assets/library/serial.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p>Aminabaad </p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-mandi')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-mandi')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-mandi', event)">
+                    </div>
+                    <audio loop id="audio-mandi">
+                        <source src="./assets/library/mandi.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul class="sound-item">
+                    <div class="description">
+                        <p> Theatre hall </p>
+                        <i class="fa fa-play" onclick="play(this,'#audio-tea')"></i>
+                    </div>
+                    <div class="volume">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-tea')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-tea', event)">
+                    </div>
+                    <audio loop id="audio-tea">
+                        <source src="./assets/library/tea.mp3" type="audio/mpeg">
+                    </audio>
+                </ul>
+                <ul>
+                    <img class= "flag" src = "./assets/image/nepal-svgrepo-com.svg" height="30px" onclick="switchToNepal()"/> 
+                    <img class="flag" src = "./assets/image/india-svgrepo-com.svg" height="30px" onclick="switchToIndia()"/> 
+                </ul>
+            </div>
+
         </div>
     </main>
     <div class="footer-loading">

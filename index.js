@@ -64,3 +64,23 @@ function mute(icon, audioId) {
 
 }
 document.documentElement.scrollHeight
+
+/** Switch view */
+function switchToNepal(){
+   console.log("switched to nepal")
+   const nepal = document.querySelector(".nepal")
+    nepal.classList.remove("hide");
+    
+   const country = document.querySelector(".india");
+   country.classList.add("hide");
+
+}
+
+/** Switch view */
+function switchToIndia(){
+    console.log("switched to india")
+    const india = document.querySelector(".india")
+     india.classList.remove("hide");
+    const nepal = document.querySelector(".nepal");
+    nepal.classList.add("hide");
+}

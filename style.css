@@ -138,7 +138,20 @@ main {
     align-items: flex-start;
 }
 
-
+/*
+ Make it scrollable
+*/
+.sounds{
+    overflow-y:auto;
+}
+.flag{
+    margin-right: 10px;
+}
+.flag:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0.5px;
+}
 /*
 First container contains title
 */
@@ -379,7 +392,18 @@ Make it Mobile Friendly
     .footer p {
         font-size: 12px;
     }
-    .embed {
-        position: absolute;
-    }
+   .embed{
+       display: none;
+   }
+}
+
+/*
+Hide
+*/
+.hide{
+    display: none;
+}
+button{
+    height: 50px;
+    width: 100px;
 }
