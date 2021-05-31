@@ -72,6 +72,11 @@ function switchToIndia(){
 }
 
 function showInfoWizard(){
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+       });
     const body = document.querySelector(".body");
     body.classList.add("info");
 
