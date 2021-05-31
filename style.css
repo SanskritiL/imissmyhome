@@ -441,6 +441,7 @@ Make it Mobile Friendly
         margin-top: 10px;
         padding-left: 30px;
         position: absolute;
+        padding-bottom: 30px;
     }
     .footer p {
         font-size: 15px;
