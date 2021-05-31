@@ -53,7 +53,7 @@
         <div id="shadow"></div>
         <div id="box"></div>
     </div>
-    <main class="loading">
+    <main class="loading body">
         <div class="title">
             <h4>I Miss <br/>My Home</h4>
             <div class="embed">
@@ -150,8 +150,8 @@
                     </audio>
                 </ul>
                 <ul>
-                    <img class= "flag" src = "./assets/image/nepal-svgrepo-com.svg" height="30px" onclick="switchToNepal()"/> 
-                    <img class="flag" src = "./assets/image/india-svgrepo-com.svg" height="30px" onclick="switchToIndia()"/> 
+                    <img class= "flag flag-selected" src = "./assets/image/nepal-svgrepo-com.svg" height="30px" onclick="switchToNepal()"/> 
+                    <img class="flag " src = "./assets/image/india-svgrepo-com.svg" height="30px" onclick="switchToIndia()"/> 
                 </ul>
             </div>
 
@@ -204,10 +204,11 @@
                     <div class="description">
                         <p> 'Kasauti Zindagi Ki' in rainy day</p>
                         <i class="fa fa-play" onclick="play(this, '#audio-serial')"></i>
+                    
                     </div>
                     <div class="volume">
                         <i class="fa fa-volume" onclick="mute(this,'#audio-serial')"></i>
-                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-serial', event)">
+                        <input type="range" id="volume-control" min="0" max="100" value="30" onchange="controlVolume('#audio-serial', event)">
                     </div>
                     <audio loop id="audio-serial">
                         <source src="./assets/library/serial.mp3" type="audio/mpeg">
@@ -215,33 +216,33 @@
                 </ul>
                 <ul class="sound-item">
                     <div class="description">
-                        <p>Aminabaad </p>
-                        <i class="fa fa-play" onclick="play(this, '#audio-mandi')"></i>
+                        <p>Highway Ambience  </p>
+                        <i class="fa fa-play" onclick="play(this, '#audio-traffic_india')"></i>
                     </div>
                     <div class="volume">
-                        <i class="fa fa-volume" onclick="mute(this,'#audio-mandi')"></i>
-                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-mandi', event)">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-traffic_india')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-traffic_india', event)">
                     </div>
-                    <audio loop id="audio-mandi">
-                        <source src="./assets/library/mandi.mp3" type="audio/mpeg">
+                    <audio loop id="audio-traffic_india">
+                        <source src="./assets/library/traffic_india.mp3" type="audio/mpeg">
                     </audio>
                 </ul>
                 <ul class="sound-item">
                     <div class="description">
-                        <p> Theatre hall </p>
-                        <i class="fa fa-play" onclick="play(this,'#audio-tea')"></i>
+                        <p> Boat ride in Ganges </p>
+                        <i class="fa fa-play" onclick="play(this,'#audio-ganges')"></i>
                     </div>
                     <div class="volume">
-                        <i class="fa fa-volume" onclick="mute(this,'#audio-tea')"></i>
-                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-tea', event)">
+                        <i class="fa fa-volume" onclick="mute(this,'#audio-ganges')"></i>
+                        <input type="range" id="volume-control" min="0" max="100" value="50" onchange="controlVolume('#audio-ganges', event)">
                     </div>
-                    <audio loop id="audio-tea">
-                        <source src="./assets/library/tea.mp3" type="audio/mpeg">
+                    <audio loop id="audio-ganges">
+                        <source src="./assets/library/ganges.mp3" type="audio/mpeg">
                     </audio>
                 </ul>
                 <ul>
                     <img class= "flag" src = "./assets/image/nepal-svgrepo-com.svg" height="30px" onclick="switchToNepal()"/> 
-                    <img class="flag" src = "./assets/image/india-svgrepo-com.svg" height="30px" onclick="switchToIndia()"/> 
+                    <img class="flag flag-selected" src = "./assets/image/india-svgrepo-com.svg" height="30px" onclick="switchToIndia()"/> 
                 </ul>
             </div>
 
@@ -254,8 +255,29 @@
                 <a href="https://imissmybar.com" target="_blank">imissmybar.com</a>,
                 <a href="https://www.imissmycafe.com/" target="_blank">imissmycafe.com</a> and
                 <a href="https://www.imisstheoffice.eu/" target="_blank">imisstheoffice.eu</a>
+                <i class="fa fa-info-circle" onclick="showInfoWizard()"></i>
             </p>
         </div>
+    </div>
+    <div class="wizard hide"> 
+            Thank you for visiting  <span>imissmyhome.</span>
+            <span id="close" onclick="closeWizard()">Close</span>
+        <br/><br/>
+        Tech stacks used: <span>HTML, CSS, JS </span> <br/><br/>
+        Thanks to my little sisters, <span>Smrity Lamsal</span> and <span>Apekshya Gyawali </span><i class="fa fa-heart"></i> for providing me audios. <br/>
+        Recorded on: Iphone
+         <br/><br/>
+         Audio I do not own: <span>Kasauti Zindagi Ki (Artist: Pamela Jain)</span>
+         <br/><br/>
+        <span>DISCLAIMER:</span>
+        No copyright infringement intended. 
+        Under section 107 of the Copyright Act 1976, 
+        allowance is made for “fair use” for purposes such as criticism, 
+        comment, news reporting, teaching, scholarship, education and research. 
+        Fair use is a use permitted by copyright statute that might otherwise be infringing.
+        <a href="https://www.youtube.com/watch?v=NnFknkuxOsI">YouTube link to Kasauti Zindagi Ki</a>
+        <br/>
+        
     </div>
     <script src="./index.js"></script>
 </body>

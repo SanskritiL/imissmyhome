@@ -152,6 +152,10 @@ main {
     opacity: 0.8;
     padding: 0.5px;
 }
+.flag-selected{
+    opacity: 0.8;
+    padding: 0.5px; 
+}
 /*
 First container contains title
 */
@@ -358,6 +362,53 @@ animation
 
 
 /*
+Hide
+*/
+.hide{
+    display: none;
+}
+button{
+    height: 50px;
+    width: 100px;
+}
+
+/** For icon */
+.info{
+    opacity: 0.1;
+}
+.fa-info-circle{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.wizard{
+    position: absolute;
+    top: 25%;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    border-radius: 2%;
+    background-color: rgb(230, 230, 222);
+    padding: 5px;
+    font-size: 12px;
+}
+.wizard a{
+    color: rgb(113, 73, 177);
+}
+span{
+    font-weight: bold;
+}
+
+#close{
+    text-decoration: underline !important;
+    margin-left: 50% !important;
+    cursor: pointer !important;
+    color: red !important;
+    font-weight: normal !important;
+}
+/*
 Make it Mobile Friendly
 */
 
@@ -387,6 +438,8 @@ Make it Mobile Friendly
         flex: 1;
     }
     .footer {
+        margin-top: 10px;
+        padding-left: 30px;
         position: absolute;
     }
     .footer p {
@@ -395,15 +448,18 @@ Make it Mobile Friendly
    .embed{
        display: none;
    }
-}
-
-/*
-Hide
-*/
-.hide{
-    display: none;
-}
-button{
-    height: 50px;
-    width: 100px;
+   .wizard{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    height: 50vh;
+    margin:auto;
+    left:10%;
+    border-radius: 2%;
+    padding: 5px;
+    font-size: 12px;
+   }
+   #close{
+    margin-left: 5% !important;
+   }
 }

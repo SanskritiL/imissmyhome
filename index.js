@@ -9,20 +9,6 @@ window.addEventListener("load", function() {
     footer.classList.remove("footer-loading");
 })
 
-if (window.innerWidth < 1024) {
-    const height = document.documentElement.scrollHeight
-
-    const element = document.getElementsByClassName("embed")[0];
-    element.style.top = height + 220 + "px";
-    console.log(element.style.top);
-
-    const footer = document.getElementsByClassName("footer")[0];
-    footer.style.top = height + 250 + 400 + "px";
-    footer.style.paddingLeft = "20px"
-
-}
-
-
 /**
  * This function toggles play/pause button and plays/stop audio 
  * @param {Object} icon - i object 
@@ -79,8 +65,24 @@ function switchToNepal(){
 /** Switch view */
 function switchToIndia(){
     console.log("switched to india")
-    const india = document.querySelector(".india")
+    const india = document.querySelector(".india");
      india.classList.remove("hide");
     const nepal = document.querySelector(".nepal");
     nepal.classList.add("hide");
+}
+
+function showInfoWizard(){
+    const body = document.querySelector(".body");
+    body.classList.add("info");
+
+    const x = document.querySelector(".wizard");
+    x.classList.remove("hide");
+
+}
+function closeWizard(){
+    const body = document.querySelector(".body");
+    body.classList.remove("info");
+
+    const x = document.querySelector(".wizard");
+    x.classList.add("hide");
 }
